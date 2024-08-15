@@ -44,9 +44,10 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             ssh -i ~/id_rsaalain mome@192.168.0.98 '
-            cd galileo-newdev/commons/galileo_servicio_commons/Servicio-Commons &&
+            cd galileo-newdev/commons/galileo_servicio_commons &&
             git fetch origin &&
             git reset --hard origin/main &&
             git pull &&
+            cd Servicio-Commons
             export PATH=/opt/maven/bin:$PATH && mvn clean install -DskipTests'
             exit
