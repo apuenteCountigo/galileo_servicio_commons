@@ -48,12 +48,15 @@ public class Balizas implements java.io.Serializable {
 	@JoinColumn(name = "idTipoBaliza", nullable = true)
 	private TipoBaliza tipoBaliza;
 	@ManyToOne
+	@JoinColumn(name = "idModeloBaliza", nullable = true)
+	private ModelosBalizas modeloBaliza;
+	@ManyToOne
 	@JoinColumn(name = "idTipoContrato", nullable = true)
 	private TipoContrato tipoContrato;
 	@ManyToOne
 	@JoinColumn(name = "idUnidad", nullable = true)
 	private Unidades unidades;
-	@Column(unique=true)
+	@Column(unique = true)
 	private String clave;
 	private String marca;
 	private String modelo;
@@ -79,12 +82,12 @@ public class Balizas implements java.io.Serializable {
 
 	@Column(nullable = true)
 	private String operacion;
-	
+
 	@Column(nullable = true)
 	private String objetivo;
-	
+
 	@PrePersist
-	private void onCreate() {		
-		fechaAlta=LocalDateTime.now();
+	private void onCreate() {
+		fechaAlta = LocalDateTime.now();
 	}
 }
