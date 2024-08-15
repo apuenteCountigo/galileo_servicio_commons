@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="galileo_bd" match-name="accionEntidad"/>
+  <table-filter match-catalog="galileo_bd" match-name="balizas"/>
+  <table-filter match-catalog="galileo_bd" match-name="conexiones"/>
+  <table-filter match-catalog="galileo_bd" match-name="datosBalizas"/>
+  <table-filter match-catalog="galileo_bd" match-name="empleos"/>
+  <table-filter match-catalog="galileo_bd" match-name="estados"/>
+  <table-filter match-catalog="galileo_bd" match-name="histObjetivosBalizas"/>
+  <table-filter match-catalog="galileo_bd" match-name="invitadoExterno"/>
+  <table-filter match-catalog="galileo_bd" match-name="juzgados"/>
+  <table-filter match-catalog="galileo_bd" match-name="localidades"/>
+  <table-filter match-catalog="galileo_bd" match-name="objetivos"/>
+  <table-filter match-catalog="galileo_bd" match-name="operaciones"/>
+  <table-filter match-catalog="galileo_bd" match-name="permisos"/>
+  <table-filter match-catalog="galileo_bd" match-name="provincias"/>
+  <table-filter match-catalog="galileo_bd" match-name="roles"/>
+  <table-filter match-catalog="galileo_bd" match-name="tipoBaliza"/>
+  <table-filter match-catalog="galileo_bd" match-name="tipoContrato"/>
+  <table-filter match-catalog="galileo_bd" match-name="tipoEntidad"/>
+  <table-filter match-catalog="galileo_bd" match-name="trazas"/>
+  <table-filter match-catalog="galileo_bd" match-name="unidades"/>
+  <table-filter match-catalog="galileo_bd" match-name="usuarios"/>
+  <table-filter match-catalog="galileo_bd" match-name="usuariosUnidades"/>
+</hibernate-reverse-engineering>
