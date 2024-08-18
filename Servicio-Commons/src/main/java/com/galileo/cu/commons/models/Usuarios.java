@@ -39,15 +39,15 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name="usuarios")
-//@JsonIgnoreProperties ( value ={ "password" }, allowSetters = true )
+@Table(name = "usuarios")
+// @JsonIgnoreProperties ( value ={ "password" }, allowSetters = true )
 public class Usuarios implements java.io.Serializable {
 
 	private static final long serialVersionUID = -7872404495014646051L;
 	@Id
-	@Column(name="id")
+	@Column(name = "id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long Id;
+	private Long id;
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "idEmpleo", nullable = false)
 	private Empleos empleos;
@@ -64,19 +64,21 @@ public class Usuarios implements java.io.Serializable {
 	private String nombre;
 	private String apellidos;
 	private String contacto;
-	private String email;	
+	private String email;
 	private String password;
 	private String certificado;
 	private String observaciones;
-	private String traccar;	
+	private String traccar;
 	private Long traccarID;
-	
-	@Column(insertable = false, updatable = false)	
-	private LocalDateTime  fechaCreacion;
-	//private LocalDateTime  fechaCreacion;
-	/*@PrePersist
-	private void onCreate() {		
-		fechaCreacion=LocalDateTime.now();
-	}*/
-	
+
+	@Column(insertable = false, updatable = false)
+	private LocalDateTime fechaCreacion;
+	// private LocalDateTime fechaCreacion;
+	/*
+	 * @PrePersist
+	 * private void onCreate() {
+	 * fechaCreacion=LocalDateTime.now();
+	 * }
+	 */
+
 }
