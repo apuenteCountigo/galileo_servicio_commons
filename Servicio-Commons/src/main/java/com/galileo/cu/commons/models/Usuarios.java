@@ -47,7 +47,7 @@ public class Usuarios implements java.io.Serializable {
 	@Id
 	@Column(name = "id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long Id;
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "idEmpleo", nullable = false)
 	private Empleos empleos;
@@ -73,10 +73,6 @@ public class Usuarios implements java.io.Serializable {
 
 	@Column(insertable = false, updatable = false)
 	private LocalDateTime fechaCreacion;
-
-	public void setId(Long id) {
-		this.id = id;
-	}
 	// private LocalDateTime fechaCreacion;
 	/*
 	 * @PrePersist
