@@ -23,6 +23,6 @@ public class ModelosBalizas implements java.io.Serializable {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int Id;
+    private long Id;
     private String descripcion;
 }
