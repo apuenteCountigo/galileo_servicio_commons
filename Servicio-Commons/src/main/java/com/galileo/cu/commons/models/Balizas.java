@@ -49,7 +49,7 @@ public class Balizas implements java.io.Serializable {
 	private TipoBaliza tipoBaliza;
 	@ManyToOne
 	@JoinColumn(name = "idModeloBaliza", nullable = true)
-	private ModelosBalizas modeloBaliza;
+	private ModelosBalizas modelo;
 	@ManyToOne
 	@JoinColumn(name = "idTipoContrato", nullable = true)
 	private TipoContrato tipoContrato;
@@ -59,7 +59,6 @@ public class Balizas implements java.io.Serializable {
 	@Column(unique = true)
 	private String clave;
 	private String marca;
-	private String modelo;
 	private String numSerie;
 	private String tipoCoordenada;
 	private String imei;
