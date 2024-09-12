@@ -24,12 +24,12 @@ import org.springframework.util.StringUtils;
 @Getter
 @Setter
 @Entity
-@Table(name="conexiones")
+@Table(name = "conexiones")
 public class Conexiones implements java.io.Serializable {
 
 	private static final long serialVersionUID = 2075085911818166859L;
 	@Id
-	@Column(name="id")
+	@Column(name = "id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long Id;
 	private String servicio;
@@ -37,19 +37,20 @@ public class Conexiones implements java.io.Serializable {
 	private String usuario;
 	private String password;
 	private String puerto;
-	@Column(insertable = false, updatable = false)	
-	private LocalDateTime  fechaCreacion;
+	@Column(insertable = false, updatable = false)
+	private LocalDateTime fechaCreacion;
 	private Integer dmaID;
 	private Integer viewIDs;
 
-	public String buildHttpUriDataminer(){
-		return "http://"+ ipServicio;
+	// acá estaba la ruta
+	public String buildHttpUriDataminer() {
+		return "http://" + ipServicio;
 	}
 
-	public String buildHttpUriTraccar(){
-		if (StringUtils.hasText(puerto)){
-			return "http://"+ ipServicio +":"+ puerto;
+	public String buildHttpUriTraccar() {
+		if (StringUtils.hasText(puerto)) {
+			return "http://" + ipServicio + ":" + puerto;
 		}
-		return "http://"+ ipServicio;
+		return "http://" + ipServicio;
 	}
 }
