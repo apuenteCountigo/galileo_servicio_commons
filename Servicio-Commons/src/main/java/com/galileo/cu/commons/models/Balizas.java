@@ -47,9 +47,9 @@ public class Balizas implements java.io.Serializable {
 	@ManyToOne
 	@JoinColumn(name = "idTipoBaliza", nullable = true)
 	private TipoBaliza tipoBaliza;
-	@ManyToOne
-	@JoinColumn(name = "idModeloBaliza", nullable = true)
-	private ModelosBalizas modeloBaliza;
+	// @ManyToOne
+	// @JoinColumn(name = "idModeloBaliza", nullable = true)
+	// private ModelosBalizas modeloBaliza;
 	@ManyToOne
 	@JoinColumn(name = "idTipoContrato", nullable = true)
 	private TipoContrato tipoContrato;
