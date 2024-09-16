@@ -42,7 +42,7 @@ public class Conexiones implements java.io.Serializable {
 	private Integer dmaID;
 	private Integer viewIDs;
 
-	// acá estaba la ruta la quite
+	// acá estaba la ruta
 	public String buildHttpUriDataminer() {
 		return "http://" + ipServicio;
 	}
