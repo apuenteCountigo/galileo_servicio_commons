@@ -41,7 +41,7 @@ public class Conexiones implements java.io.Serializable {
 	private LocalDateTime fechaCreacion;
 	private Integer dmaID;
 	private Integer viewIDs;
-	private String ruta; // nuevo
+	private String ruta; // nuevo OK
 
 	public String buildHttpUriDataminer() {
 		return "http://" + ipServicio;
