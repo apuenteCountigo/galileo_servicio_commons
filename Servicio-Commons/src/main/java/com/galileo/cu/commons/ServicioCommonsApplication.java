@@ -9,13 +9,13 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @Entity
 @SpringBootApplication
-@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
+@EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class })
 public class ServicioCommonsApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println("**************************************");
-		System.out.println("COMMONS V-0617-15:50");
+		System.out.println("COMMONS V24-09-28 05:44");
 	}
 
 }
