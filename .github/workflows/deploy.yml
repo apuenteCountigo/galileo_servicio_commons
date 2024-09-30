@@ -46,11 +46,7 @@ jobs:
             ssh -i ~/id_rsaalain mome@192.168.0.98 '
             cd galileo-newdev/commons/galileo_servicio_commons &&
             git fetch origin &&
-            if git show-ref --verify --quiet refs/heads/BeforeRuta; then
-                git checkout BeforeRuta
-            else
-                git checkout -b BeforeRuta origin/BeforeRuta
-            fi
+            git checkout BeforeRuta
             git reset --hard origin/BeforeRuta &&
             git pull &&
             cd Servicio-Commons
