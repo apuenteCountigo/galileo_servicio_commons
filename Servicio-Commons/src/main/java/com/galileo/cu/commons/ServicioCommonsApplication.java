@@ -15,7 +15,7 @@ public class ServicioCommonsApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println("**************************************");
-		System.out.println("COMMONS V-24-09-30 14:53");
+		System.out.println("COMMONS V-24-10-01 01:14");
 	}
 
 }
