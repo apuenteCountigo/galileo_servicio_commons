@@ -43,8 +43,13 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            ssh -i ~/id_rsaalain mome@192.168.0.98 '
-            cd galileo-newdev/commons/galileo_servicio_commons &&
+            ssh -i ~/id_rsaalain mome@192.168.0.212 '
+            cd galileo-dev-v1.1/commons
+            if [ ! -d "galileo_servicio_commons" ]; then
+              echo "validada galileo-dev-v1.1/commons/galileo_servicio_commons" &&
+              git clone https://github.com/apuenteCountigo/galileo_servicio_commons.git
+            fi
+            cd galileo_servicio_commons &&
             git fetch origin &&
             git checkout BeforeRuta
             git reset --hard origin/BeforeRuta &&
