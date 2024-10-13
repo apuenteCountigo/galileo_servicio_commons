@@ -6,9 +6,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class ErrorFeign {
-    private String timestamp;
-    private int status;
-    private String error;
-    private String message;
-    private String path;
+    public String timestamp;
+    public int status;
+    public String error;
+    public String message;
+    public String path;
 }
