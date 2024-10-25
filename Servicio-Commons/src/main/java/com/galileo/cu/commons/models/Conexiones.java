@@ -34,6 +34,7 @@ public class Conexiones implements java.io.Serializable {
 	private long Id;
 	private String servicio;
 	private String ipServicio;
+	private String mapAddress;
 	private String usuario;
 	private String password;
 	private String puerto;
